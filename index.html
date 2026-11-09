@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búnker Central | Dashboard & Portfolio OSINT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background-color: #0d1117; color: #c9d1d9; font-family: monospace; }
+    .border-cyber { border: 1px solid #30363d; }
+    .card-cyber { background-color: #161b22; border: 1px solid #30363d; }
+    .card-cyber:hover { border-color: #58a6ff; }
+  </style>
+</head>
+<body class="p-4 md:p-8">
+  <div class="max-w-6xl mx-auto space-y-6">
+    
+    <!-- HEADER -->
+    <header class="card-cyber p-6 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <h1 class="text-2xl font-bold text-green-400 flex items-center gap-2">
+          <i class="fa-solid font-mono fa-terminal"></i> BÚNKER CENTRAL v3.0
+        </h1>
+        <p class="text-xs text-gray-400 mt-1">Plataforma de Inteligencia OSINT & Auditoría de Redes</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-green-900/50 text-green-400 border border-green-700">
+          <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> SYSTEM ONLINE
+        </span>
+      </div>
+    </header>
+
+    <!-- METRICS -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="card-cyber p-4 rounded-lg">
+        <p class="text-xs text-gray-400">Registros Auditados</p>
+        <p class="text-2xl font-bold text-blue-400 mt-1">14 DB</p>
+      </div>
+      <div class="card-cyber p-4 rounded-lg">
+        <p class="text-xs text-gray-400">Motor de Búsqueda</p>
+        <p class="text-2xl font-bold text-green-400 mt-1">Sherlock OSINT</p>
+      </div>
+      <div class="card-cyber p-4 rounded-lg">
+        <p class="text-xs text-gray-400">Validación Algorítmica</p>
+        <p class="text-2xl font-bold text-purple-400 mt-1">Módulo 11</p>
+      </div>
+      <div class="card-cyber p-4 rounded-lg">
+        <p class="text-xs text-gray-400">Entorno</p>
+        <p class="text-2xl font-bold text-yellow-400 mt-1">Termux Mobile</p>
+      </div>
+    </div>
+
+    <!-- SERVICIOS Y PROYECTOS -->
+    <main class="space-y-6">
+      <h2 class="text-lg font-bold text-white border-b border-gray-700 pb-2">Servicios & Capacidades OSINT</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- CARD 1 -->
+        <div class="card-cyber p-5 rounded-lg space-y-3">
+          <div class="text-green-400 text-xl"><i class="fa-solid fa-user-shield"></i></div>
+          <h3 class="font-bold text-white">Auditoría de Identidad & Alias</h3>
+          <p class="text-xs text-gray-400">Correlación cruzada de perfiles digitales en más de 300 plataformas con Sherlock y parsers propios.</p>
+        </div>
+        <!-- CARD 2 -->
+        <div class="card-cyber p-5 rounded-lg space-y-3">
+          <div class="text-blue-400 text-xl"><i class="fa-solid fa-network-wired"></i></div>
+          <h3 class="font-bold text-white">Recon de Infraestructura</h3>
+          <p class="text-xs text-gray-400">Análisis DNS, Certificate Transparency, geolocalización IP y escaneo de servicios expuestos.</p>
+        </div>
+        <!-- CARD 3 -->
+        <div class="card-cyber p-5 rounded-lg space-y-3">
+          <div class="text-purple-400 text-xl"><i class="fa-solid fa-file-contract"></i></div>
+          <h3 class="font-bold text-white">Parsing Institucional</h3>
+          <p class="text-xs text-gray-400">Consultas automatizadas sobre Boletín Oficial, padrones, ARBA y registros de contrataciones.</p>
+        </div>
+      </div>
+
+      <!-- INFORME EJECUTIVO MOCK / VISOR -->
+      <div class="card-cyber p-6 rounded-lg space-y-4">
+        <h2 class="text-md font-bold text-green-400 flex items-center gap-2">
+          <i class="fa-solid fa-file-lines"></i> Ejemplo de Informe Ejecutivo Generado
+        </h2>
+        <div class="bg-black/50 p-4 rounded border border-gray-800 text-xs font-mono leading-relaxed space-y-2">
+          <p class="text-gray-400"># INFORME EJECUTIVO DE AUDITORÍA OSINT</p>
+          <p><span class="text-blue-400">Base de datos fuente:</span> osint_suite.db</p>
+          <p><span class="text-blue-400">Objetivo Analizado:</span> Dominio & CUIT Identidad Crítica</p>
+          <hr class="border-gray-800 my-2">
+          <p class="text-green-400">✔ Escaneo DNS e IP: Aruba S.p.A. (Italia)</p>
+          <p class="text-green-400">✔ Identidad: CUIT validado por Módulo 11</p>
+          <p class="text-green-400">✔ Perfiles Detectados: 20 plataformas (Discord, Telegram, GitHub, TikTok, etc.)</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER / CONTACTO -->
+    <footer class="card-cyber p-6 rounded-lg text-center space-y-3">
+      <p class="text-sm font-bold text-white">¿Necesitás una auditoría o desarrollo de automatización a medida?</p>
+      <p class="text-xs text-gray-400">Contacto directo: Alejandro Ahmad | Especialista en OSINT & Ciberseguridad Defensiva</p>
+    </footer>
+
+  </div>
+</body>
+</html>
